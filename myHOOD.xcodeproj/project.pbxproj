@@ -14,6 +14,8 @@
 		65D387B11C742950005B8A3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D387AF1C742950005B8A3E /* LaunchScreen.storyboard */; };
 		65D387BA1C742C00005B8A3E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D387B91C742C00005B8A3E /* Post.swift */; };
 		65D387BD1C74464F005B8A3E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D387BC1C74464F005B8A3E /* PostCell.swift */; };
+		65D387C21C745181005B8A3E /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D387C11C745181005B8A3E /* AddPostViewController.swift */; };
+		65D387C51C746B61005B8A3E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D387C41C746B61005B8A3E /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		65D387B21C742950005B8A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65D387B91C742C00005B8A3E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		65D387BC1C74464F005B8A3E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		65D387C11C745181005B8A3E /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		65D387C41C746B61005B8A3E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,12 @@
 		65D387A51C742950005B8A3E /* myHOOD */ = {
 			isa = PBXGroup;
 			children = (
+				65D387C31C746B4D005B8A3E /* Services */,
+				65D387BE1C7450EE005B8A3E /* Controller */,
 				65D387BB1C74462A005B8A3E /* View */,
 				65D387B81C742BF0005B8A3E /* Model */,
 				65D387A61C742950005B8A3E /* AppDelegate.swift */,
-				65D387A81C742950005B8A3E /* ViewController.swift */,
-				65D387AA1C742950005B8A3E /* Main.storyboard */,
 				65D387AD1C742950005B8A3E /* Assets.xcassets */,
-				65D387AF1C742950005B8A3E /* LaunchScreen.storyboard */,
 				65D387B21C742950005B8A3E /* Info.plist */,
 			);
 			path = myHOOD;
@@ -82,8 +85,27 @@
 			isa = PBXGroup;
 			children = (
 				65D387BC1C74464F005B8A3E /* PostCell.swift */,
+				65D387AA1C742950005B8A3E /* Main.storyboard */,
+				65D387AF1C742950005B8A3E /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		65D387BE1C7450EE005B8A3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65D387C11C745181005B8A3E /* AddPostViewController.swift */,
+				65D387A81C742950005B8A3E /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65D387C31C746B4D005B8A3E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65D387C41C746B61005B8A3E /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D387BA1C742C00005B8A3E /* Post.swift in Sources */,
+				65D387C21C745181005B8A3E /* AddPostViewController.swift in Sources */,
 				65D387A91C742950005B8A3E /* ViewController.swift in Sources */,
+				65D387C51C746B61005B8A3E /* DataService.swift in Sources */,
 				65D387A71C742950005B8A3E /* AppDelegate.swift in Sources */,
 				65D387BD1C74464F005B8A3E /* PostCell.swift in Sources */,
 			);
